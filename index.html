@@ -3,78 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="./main.js" defer></script>
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="container__profile">
+      <header>
+        <img src="./images/image-jeremy.png" alt="Jeremy profile">
+        <div class="intro">
+          <p class="kicker">Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </header>
+      <div class="options">
+        <p class="daily option" id="daily">Daily</p>
+        <p class="weekly option" id="weekly">Weekly</p>
+        <p class="monthly option" id="monthly">Monthly</p>
+      </div>
+    </div>
+    <div class="container__work action">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-work.svg" alt="briefcase">
+      </div>
+      <div class="time-container">
+        <div class="action-title">
+          <h2 class="title">Work</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="times">
+          <div class="current"></div>
+          <div class="previous"></div>
+        </div>
+      </div>
+      </div>
+    <div class="container__play action">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-play.svg" alt="game-controller">
+      </div>
+      <div class="time-container">
+        <div class="action-title">
+          <h2 class="title">Play</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="times">
+          <div class="current"></div>
+          <div class="previous"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container__study action">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-study.svg" alt="book">
+      </div>
+      <div class="time-container">
+        <div class="action-title">
+          <h2 class="title">Study</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="times">
+          <div class="current">32hrs</div>
+          <div class="previous"></div>
+        </div>
+      </div></div>
+    <div class="container__exercise action">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-exercise.svg" alt="exercise">
+      </div>
+      <div class="time-container">
+        <div class="action-title">
+          <h2 class="title">Exercise</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="times">
+          <div class="current"></div>
+          <div class="previous"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container__social action">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-social.svg" alt="conversation bubble">
+      </div>
+      <div class="time-container">
+        <div class="action-title">
+          <h2 class="title">Social</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="times">
+          <div class="current"></div>
+          <div class="previous"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container__self-care action">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-self-care.svg" alt="heart">
+      </div>
+      <div class="time-container">
+        <div class="action-title">
+          <h2 class="title">Self Care</h2>
+          <img src="./images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="times">
+          <div class="current"></div>
+          <div class="previous"></div>
+        </div>
+      </div>
+    </div>
   </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mirna &ndrisic</a>.
+  </footer>
 </body>
 </html>

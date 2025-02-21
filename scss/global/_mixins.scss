@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use '../global/variables' as *;
+
+@mixin flexTemplate($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin respond($size1, $size2: null, $size3: null) {
+    @if map.get($breakpoints, $size1) {
+      @media (min-width: map.get($breakpoints, $size1)) {
+        @content;
+      }
+    }
+  
+    @if $size2 and map.get($breakpoints, $size2) { 
+      @media (min-width: map.get($breakpoints, $size2)) {
+        @content;
+      }
+    }
+  
+    @if $size3 and map.get($breakpoints, $size3) {
+      @media (min-width: map.get($breakpoints, $size3)) {
+        @content;
+      }
+    }
+}
